@@ -32,7 +32,8 @@ jobs:
                            libengine-pkcs11-openssl \
                            libfastcdr-dev \
                            libfoonathan-memory-dev \
-                           libgtest-dev
+                           libgtest-dev \
+                           libgmock-dev
           sudo usermod -a -G softhsm $(whoami)
       - name: Generate build files
         run: |
