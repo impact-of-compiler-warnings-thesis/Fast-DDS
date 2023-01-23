@@ -29,7 +29,8 @@ jobs:
                            libp11-dev \
                            libengine-pkcs11-openssl \
                            softhsm2 \
-                           libengine-pkcs11-openssl
+                           libengine-pkcs11-openssl \
+                           libfastcdr-dev
           sudo usermod -a -G softhsm $(whoami)
       - name: Install GTest
         run: |
