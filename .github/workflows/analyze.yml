@@ -34,9 +34,6 @@ jobs:
                            libfoonathan-memory-dev \
                            libgtest-dev
           sudo usermod -a -G softhsm $(whoami)
-      - name: Install GTest
-        run: |
-          git clone https://github.com/google/googletest src/googletest-distribution
       - name: Generate build files
         run: |
           mkdir build && cd build
