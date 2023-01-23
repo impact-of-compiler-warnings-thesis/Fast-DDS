@@ -31,7 +31,8 @@ jobs:
                            softhsm2 \
                            libengine-pkcs11-openssl \
                            libfastcdr-dev \
-                           libfoonathan-memory-dev
+                           libfoonathan-memory-dev \
+                           libgtest-dev
           sudo usermod -a -G softhsm $(whoami)
       - name: Install GTest
         run: |
